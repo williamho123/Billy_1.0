@@ -141,9 +141,14 @@ var config = {
     animation: {
       animateScale: true,
       animateRotate: true
-    }
+    },
+    onClick:goToStats
   }
 };
+
+function goToStats(event, array) {
+  window.location.href = "myStats";
+}
 
 var ctx = document.getElementById("myChart").getContext("2d");
 new Chart(ctx, config);
@@ -154,7 +159,8 @@ function adjustChartSize(){
 var h = $(window).height();
         $("#main").css({
                 width:Math.min(w,h)*0.9,
-                height: Math.min(w,h)*0.9});
+                height: Math.min(w,h)*0.9
+}		);
 }
 adjustChartSize();  //onload
 $(window).resize(adjustChartSize);
