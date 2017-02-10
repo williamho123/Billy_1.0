@@ -147,7 +147,7 @@ var config = {
 };
 
 function goToStats(event, array) {
-  window.location.href = "myStats";
+  window.location.href = "myStats.html";
 }
 
 var ctx = document.getElementById("myChart").getContext("2d");
