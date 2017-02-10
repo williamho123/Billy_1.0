@@ -124,7 +124,7 @@ var config = {
      borderWidth: 1,
      hoverBorderWidth:5
      }],
-  labels: ["Facebook", 'YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
+  labels: ["Social Media", 'School', 'Entertainment', 'News','Email', 'Other']
   },
   options: {
     responsive: true,
@@ -133,7 +133,6 @@ var config = {
     },
     title: {
       display: true,
-      text: 'DASHBOARD       ',
       fontSize: 50,
       position: 'top',
       padding:  40
@@ -157,7 +156,7 @@ new Chart(ctx, config);
 function adjustChartSize(){
      var w = $(window).width();
 var h = $(window).height();
-        $("#main").css({
+        $("#myChart").css({
                 width:Math.min(w,h)*0.9,
                 height: Math.min(w,h)*0.9
 }		);

@@ -1,6 +1,28 @@
-#main {
+#dashboard_canvas {
   display:block;
   width: 50%
   float:left;
   margin-left: 8%;
+}
+
+#myStats_canvas_bar {
+  display:block;
+  width:55%;
+  float:top;
+  margin-top: 10%;
+  float:left;
+  margin-left : -10%;
+}
+
+
+#myStats_canvas_polar {
+  display:block;
+  width:55%;
+  float:left;
+  float:top;
+   margin-top : -55%;
+  margin-left : 48%;
+}
+
+#myStats_title {
 }

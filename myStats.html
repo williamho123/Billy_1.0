@@ -26,20 +26,23 @@
   <div class="navbar navbar-inverse navbar-fixed-left">
     <div class="navbar-brand" href="#">Billy && Co.</div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Dashboard</a></li>
-        <li><a href="myStats.html">My Statistics</a></li>
+        <li><a href="index.html">Dashboard</a></li>
+        <li class="active"><a href="myStats.html">My Statistics</a></li>
         <li><a href="#">(Un)Productivity</a></li>
         <li><a href="#">You vs. The World</a></li>
         <li><a href="#">Settings</a></li>
       </ul>
     </div>
     <div class="container">
-      <div id="main" class="row">
-	<canvas id="polarChart" width="40%" height="40%"></canvas>
-        <canvas id="barChart" width="40%" height="40%"></canvas>
-        <script src="js/myStatsChart.js"></script>
+    <div id="myStats_title"> My Statistics </div>  
+    <div id="myStats_canvas_bar" class="row">
+	<canvas id="barChart" width="40%" height="40%"></canvas>
+       <script src="js/myStatsChart.js"></script>
       </div>
-    </div>
+       <div id="myStats_canvas_polar" class="row">
+	<canvas id="polarChart" width="40%" height="40%"></canvas>
+       <script src="js/myStatsChart.js"></script>
+      </div>
   </div>
 </body>
 </html>
