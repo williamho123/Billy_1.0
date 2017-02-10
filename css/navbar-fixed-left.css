@@ -1,0 +1,21 @@
+.navbar-fixed-left {
+  width: 230px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: left;
+  width: 229px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 250px;
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 140px;
+}
