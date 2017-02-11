@@ -14,13 +14,12 @@
   margin-left : -10%;
 }
 
-
 #myStats_canvas_polar {
   display:block;
   width:55%;
   float:left;
   float:top;
-   margin-top : -55%;
+  margin-top : -55%;
   margin-left : 48%;
 }
 
