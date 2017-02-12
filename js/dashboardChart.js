@@ -131,12 +131,6 @@ var config = {
     legend: {
       position: 'right',
     },
-    title: {
-      display: true,
-      fontSize: 50,
-      position: 'top',
-      padding:  40
-    },
     animation: {
       animateScale: true,
       animateRotate: true
@@ -157,8 +151,8 @@ function adjustChartSize(){
      var w = $(window).width();
 var h = $(window).height();
         $("#myChart").css({
-                width:Math.min(w,h)*0.9,
-                height: Math.min(w,h)*0.9
+                width:Math.min(w,h)*0.85,
+                height: Math.min(w,h)*0.85
 }		);
 }
 adjustChartSize();  //onload
