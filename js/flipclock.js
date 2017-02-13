@@ -9,7 +9,7 @@ if (localStorage.getItem("end")) {
     });
   }
   else {
-    document.getElementById("startb").innerHTML="START";
+    document.getElementById("startb").innerHTML="RESUME";
     $("#startb").css({
       color:"green"
     });
@@ -185,7 +185,7 @@ startbutton.onclick = function() {
   }
   else {
     stopp=1;
-    document.getElementById("startb").innerHTML = "START"
+    document.getElementById("startb").innerHTML = "RESUME"
     $("#startb").css({
       color:"green"
     });
