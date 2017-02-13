@@ -1,5 +1,12 @@
-var stopp = 1;
-var endtime = 60*60;
+//check if cached, otherwise reset
+if (localStorage.getItem("end")) {
+  var stopp = localStorage.getItem("stp");
+  var endtime = localStorage.getItem("end");
+}
+else {
+  var stopp = 1;
+  var endtime = 60*60;
+}
 var stopbutton = document.getElementById("stopb");
 var startbutton = document.getElementById("startb");
 var jiashi = document.getElementById("inch");
@@ -29,10 +36,12 @@ function getTimeRemaining(endtime) {
 }
 
 
-
 function initializeClock() {
-
-
+  if (localStorage.getItem("hour")) {
+	
+ 
+  }
+   
   var t = getTimeRemaining(endtime);
 
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -51,8 +60,9 @@ function initializeClock() {
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }
-
+ 
       endtime = endtime - 1;
+      localStorage.setItem("end", endtime);	
     }
     }
 
@@ -147,6 +157,12 @@ jianmiao.onclick =function() {
 
 
 
-stopbutton.onclick = function() {stopp=1};
-startbutton.onclick = function() {stopp=0};
+stopbutton.onclick = function() {
+stopp=1;
+localStorage.setItem("stp", 1);
+};
+startbutton.onclick = function() {
+stopp=0;
+localStorage.setItem("stp", 0);
+};
 initializeClock();
