@@ -53,7 +53,7 @@
   <button id="decm"> &#9660; </button>
   <button id="decs"> &#9660; </button>
   <button id="startb"> START </button>
-  <button id="stopb"> STOP </button>
+  <button id="stopb"> RESET </button>
   <script src="../js/flipclock.js"></script>
 
 </div>

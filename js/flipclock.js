@@ -2,6 +2,18 @@
 if (localStorage.getItem("end")) {
   var stopp = localStorage.getItem("stp");
   var endtime = localStorage.getItem("end");
+  if (stopp == 0) {
+    document.getElementById("startb").innerHTML ="PAUSE";
+    $("#startb").css({
+      color:"red"
+    });
+  }
+  else {
+    document.getElementById("startb").innerHTML="START";
+    $("#startb").css({
+      color:"green"
+    });
+  }
 }
 else {
   var stopp = 1;
@@ -38,10 +50,10 @@ function getTimeRemaining(endtime) {
 
 function initializeClock() {
   if (localStorage.getItem("hour")) {
-	
- 
+
+
   }
-   
+
   var t = getTimeRemaining(endtime);
 
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -60,9 +72,9 @@ function initializeClock() {
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }
- 
+
       endtime = endtime - 1;
-      localStorage.setItem("end", endtime);	
+      localStorage.setItem("end", endtime);
     }
     }
 
@@ -83,7 +95,7 @@ jiashi.onclick =function() {
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-}
+};
 
 jiafen.onclick =function() {
   if (Math.floor((endtime/ 60) % 60)>58){
@@ -97,7 +109,7 @@ jiafen.onclick =function() {
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-}
+};
 
 jiamiao.onclick =function() {
   if (Math.floor(endtime % 60)>58) {
@@ -112,7 +124,7 @@ jiamiao.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-}
+};
 
 jianshi.onclick =function() {
   if (Math.floor((endtime/ ( 60 * 60)) % 24)<1){
@@ -126,7 +138,7 @@ jianshi.onclick =function() {
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-}
+};
 
 jianfen.onclick =function() {
   if (Math.floor((endtime/ 60) % 60)<1){
@@ -140,7 +152,7 @@ jianfen.onclick =function() {
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-}
+};
 
 jianmiao.onclick =function() {
   if (Math.floor((endtime ) % 60)<1){
@@ -153,16 +165,31 @@ jianmiao.onclick =function() {
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-}
+};
 
 
 
 stopbutton.onclick = function() {
-stopp=1;
-localStorage.setItem("stp", 1);
+localStorage.removeItem("stp");
+localStorage.removeItem("end");
+location.reload();
 };
+
 startbutton.onclick = function() {
-stopp=0;
-localStorage.setItem("stp", 0);
+  if (stopp==1){
+    stopp=0;
+    document.getElementById("startb").innerHTML = "PAUSE";
+    $("#startb").css({
+      color:"red"
+    });
+  }
+  else {
+    stopp=1;
+    document.getElementById("startb").innerHTML = "START"
+    $("#startb").css({
+      color:"green"
+    });
+  }
+localStorage.setItem("stp", stopp);
 };
 initializeClock();

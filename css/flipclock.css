@@ -45,14 +45,17 @@
 
 
 #startb{
-  background-color: green;
+  background-color: rgba(54, 25, 25, 0);
   border: none;
   width: 100px;
+  color: green;
 }
 #stopb{
-  background-color: red;
+  background-color: rgba(54, 25, 25, 0);
   border: none;
   width: 100px;
+  color: grey;
+
 
 
 }
