@@ -25,11 +25,11 @@
   <div class="navbar navbar-inverse navbar-fixed-left">
     <a class="navbar-brand" href="/">Billy && Co.</a>
       <ul class="nav navbar-nav">
-        <li><a href="/">Dashboard</a></li>
-        <li><a href="myStats">My Statistics</a></li>
-        <li><a href="unproductivity">(Un)Productivity</a></li>
-        <li><a href="comparisons">You vs. The World</a></li>
-        <li><a href="settings">Settings</a></li>
+        <li id="Dashboard Nav"><a href="/">Dashboard</a></li>
+        <li id="My Statistics Nav"><a href="myStats">My Statistics</a></li>
+        <li id="(Un)Productivity Nav"><a href="unproductivity">(Un)Productivity</a></li>
+        <li id="You vs. The World Nav"><a href="comparisons">You vs. The World</a></li>
+        <li id="Settings Nav"><a href="settings">Settings</a></li>
       </ul>
       <div id="clockdiv">
     <button id="inch"> &#9650; </button>
@@ -60,7 +60,8 @@
   </div>
   <div class="container">
     @yield('content')
-
-
+    <script type="text/javascript">
+      document.getElementById(document.title + " Nav").className = "active";
+    </script>
 </body>
 </html>
