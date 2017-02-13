@@ -21,3 +21,13 @@ var barChart = new Chart(ctx3, {
     options: options
 });
 
+function adjustChartSize(){
+     var w = $(window).width();
+var h = $(window).height();
+        $("#comparisonChart").css({
+                width:Math.min(w,h)*0.7,
+                height: Math.min(w,h)*0.7
+}               );
+}
+adjustChartSize();  //onload
+$(window).resize(adjustChartSize);
