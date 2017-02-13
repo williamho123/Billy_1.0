@@ -26,8 +26,9 @@ function adjustChartSize(){
 var h = $(window).height();
         $("#comparisonChart").css({
                 width:Math.min(w,h)*0.7,
-                height: Math.min(w,h)*0.7
+                height: Math.min(w,h)*0.7,
 }               );
+document.getElementById("comparisonChart").style.marginLeft = w*0.2;
 }
 adjustChartSize();  //onload
 $(window).resize(adjustChartSize);
