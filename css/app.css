@@ -7,19 +7,19 @@
 
 #myStats_canvas_bar {
   display:block;
-  width:55%;
+  width:50%;
   float:top;
-  margin-top: 10%;
+  margin-top: 5%;
   float:left;
-  margin-left : -10%;
+  margin-left: -5%;
 }
 
 #myStats_canvas_polar {
   display:block;
-  width:55%;
+  width:50%;
   float:left;
   float:top;
-  margin-top : -55%;
+  margin-top : -50%;
   margin-left : 48%;
 }
 
