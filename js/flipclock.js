@@ -49,11 +49,6 @@ function getTimeRemaining(endtime) {
 
 
 function initializeClock() {
-  if (localStorage.getItem("hour")) {
-
-
-  }
-
   var t = getTimeRemaining(endtime);
 
   hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
@@ -70,7 +65,12 @@ function initializeClock() {
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
       if (t.total <= 0) {
-        clearInterval(timeinterval);
+        stopp=1;
+        endtime = 60*60+1;
+        localStorage.setItem("end", endtime);
+        document.getElementById("startb").innerHTML = "Start";
+        $("#startb").css({
+          color:"green"});
       }
 
       endtime = endtime - 1;
@@ -185,7 +185,7 @@ startbutton.onclick = function() {
   }
   else {
     stopp=1;
-    document.getElementById("startb").innerHTML = "RESUME"
+    document.getElementById("startb").innerHTML = "RESUME";
     $("#startb").css({
       color:"green"
     });
