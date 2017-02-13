@@ -22,6 +22,10 @@
   margin-top : -50%;
   margin-left : 48%;
 }
-
-#myStats_title {
+#comparison_bar {
+  display:block;
+  width:70%;
+  float:top;
+  float:left;
+  margin-left: 10%;
 }
