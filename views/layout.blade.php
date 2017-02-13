@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/navbar-fixed-left.css">
     <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/flipclock.css"
 
     <!--Javascripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
@@ -30,8 +31,36 @@
         <li><a href="comparisons">You vs. The World</a></li>
         <li><a href="settings">Settings</a></li>
       </ul>
+      <div id="clockdiv">
+    <button id="inch"> &#9650; </button>
+    <button id="incm"> &#9650; </button>
+    <button id="incs"> &#9650; </button>
+
+
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+  <button id="dech"> &#9660; </button>
+  <button id="decm"> &#9660; </button>
+  <button id="decs"> &#9660; </button>
+  <button id="startb"> START </button>
+  <button id="stopb"> STOP </button>
+  <script src="../js/flipclock.js"></script>
+
+</div>
   </div>
   <div class="container">
     @yield('content')
+
+
 </body>
 </html>

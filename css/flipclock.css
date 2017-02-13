@@ -1,0 +1,58 @@
+
+#inch, #incm, #incs, #dech, #decm, #decs{
+  width : 70px;
+  background-color: rgba(54, 25, 25, 0);
+  border: none;
+  font-size: 16px;
+
+
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 13px;
+    position:relative;
+    padding-top: 280px;
+    padding-left: 5px;
+  }
+
+#clockdiv > div{
+    padding: 5px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+    width: 65px;
+    margin: 2px;
+
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    width: 50px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+
+#startb{
+  background-color: green;
+  border: none;
+  width: 100px;
+}
+#stopb{
+  background-color: red;
+  border: none;
+  width: 100px;
+
+
+}
