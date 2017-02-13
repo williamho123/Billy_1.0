@@ -37,3 +37,8 @@ ul.unprodBody{
     font-size: 30px;
     font-weight:bold;
 }
+
+#unprodText {
+  width: 80%;  
+
+}
