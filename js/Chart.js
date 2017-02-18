@@ -1442,11 +1442,11 @@ for (var func in conversions) {
   // export rgb2hsl and ["rgb"]["hsl"]
   convert[from] = convert[from] || {};
 
-  convert[from][to] = convert[func] = (function(func) { 
+  convert[from][to] = convert[func] = (function(func) {
     return function(arg) {
       if (typeof arg == "number")
         arg = Array.prototype.slice.call(arguments);
-      
+
       var val = conversions[func](arg);
       if (typeof val == "string" || val === undefined)
         return val; // keyword
@@ -1474,12 +1474,12 @@ Converter.prototype.routeSpace = function(space, args) {
    }
    // color.rgb(10, 10, 10)
    if (typeof values == "number") {
-      values = Array.prototype.slice.call(args);        
+      values = Array.prototype.slice.call(args);
    }
 
    return this.setValues(space, values);
 };
-  
+
 /* Set the values for a space, invalidating cache */
 Converter.prototype.setValues = function(space, values) {
    this.space = space;
@@ -1865,6 +1865,14 @@ module.exports = function(Chart) {
 					offsetGridLines: true
 				}
 			}],
+      tooltips: {
+        callbacks: {
+          label: function(tooltipItem, data) {
+  					var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
+  					return datasetLabel + ': ' + tooltipItem.xLabel+' minutes';
+  				}
+        }
+      },
 			yAxes: [{
 				type: 'linear'
 			}]
@@ -2167,7 +2175,7 @@ module.exports = function(Chart) {
 				},
 				label: function(tooltipItem, data) {
 					var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
-					return datasetLabel + ': ' + tooltipItem.xLabel;
+					return datasetLabel + ': ' + tooltipItem.xLabel+' minutes';
 				}
 			}
 		}
@@ -2558,7 +2566,7 @@ module.exports = function(Chart) {
 		},
 		legend: {
 			labels: {
-					
+
 			generateLabels: function(chart) {
 					var data = chart.data;
 					if (data.labels.length && data.datasets.length) {
@@ -3260,7 +3268,7 @@ module.exports = function(Chart) {
 					return '';
 				},
 				label: function(tooltipItem, data) {
-					return data.labels[tooltipItem.index] + ': ' + tooltipItem.yLabel;
+					return data.labels[tooltipItem.index] + ': ' + tooltipItem.yLabel+ ' minutes';
 				}
 			}
 		}
@@ -8687,7 +8695,7 @@ module.exports = function(Chart) {
 			beforeLabel: helpers.noop,
 			label: function(tooltipItem, data) {
 				var datasetLabel = data.datasets[tooltipItem.datasetIndex].label || '';
-				return datasetLabel + ': ' + tooltipItem.yLabel;
+				return datasetLabel + ': ' + tooltipItem.yLabel+' minutes';
 			},
 			labelColor: function(tooltipItem, chartInstance) {
 				var meta = chartInstance.getDatasetMeta(tooltipItem.datasetIndex);
