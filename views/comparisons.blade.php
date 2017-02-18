@@ -12,7 +12,7 @@
   </div>
 
 <h3 class = "category-bar">Categories</h3>
-<div class = "container-embed">
+<div id = "categoryContainer" class = "container-embed">
     <a id = 'socialMedia'>Social Media</a>
     <br>
     <a id = 'school'>School</a>
