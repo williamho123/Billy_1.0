@@ -2,6 +2,18 @@
   font-weight: bold;
 }
 
+#fb {
+  color: rgb(59, 89, 152);
+}
+
+#cs {
+  color: rgb(78, 42, 132);
+}
+
+#nf {
+  color: rgb(229, 9, 20);
+}
+
 .site1:hover{
     color: lightgray;
 }
