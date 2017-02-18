@@ -13,17 +13,15 @@
 
 <h3 class = "category-bar">Categories</h3>
 <div class = "container-embed">
-    <a href = '.'>Social Media</a>
+    <a id = 'socialMedia'>Social Media</a>
     <br>
-    <a href = '.'>School</a>
+    <a id = 'school'>School</a>
     <br>
-    <a href = '.'>Entertainment</a>
+    <a id = 'entertainment'>Entertainment</a>
     <br>
-    <a href = '.'>News</a>
+    <a id = 'news'>News</a>
     <br>
-    <a href = '.'>Email</a>
-    <br>
-    <a href = '.'>Other</a>
+    <a id = 'email'>Email</a>
 </div>
 
 
