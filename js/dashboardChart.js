@@ -134,14 +134,10 @@ var config = {
     animation: {
       animateScale: true,
       animateRotate: true
-    },
-    onClick:goToStats
+    }
   }
 };
 
-function goToStats(event, array) {
-  //window.location.href = "myStats";
-}
 
 var ctx = document.getElementById("myChart").getContext("2d");
 var myNewChart = new Chart(ctx, config);
