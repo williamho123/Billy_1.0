@@ -28,7 +28,7 @@ var h = $(window).height();
                 width:Math.min(w,h)*0.7,
                 height: Math.min(w,h)*0.7,
 }               );
-document.getElementById("comparisonChart").style.marginLeft = "10%";
+document.getElementById("comparisonChart").style.marginLeft = "-15%";
 }
 adjustChartSize();  //onload
 $(window).resize(adjustChartSize);
