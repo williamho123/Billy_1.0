@@ -11,9 +11,19 @@ var data = {
      }],
   labels: ['YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
 };
+function setAllButtonDefault() {
+document.getElementById('socialMedia').className = "btn btn-default";
+document.getElementById('school').className = "btn btn-default";
+document.getElementById('entertainment').className = "btn btn-default";
+document.getElementById('news').className = "btn btn-default";
+document.getElementById('email').className = "btn btn-default";
+}
+
 
 //onclick event for the menu of categories
 document.getElementById('socialMedia').onclick = function() {
+setAllButtonDefault();
+document.getElementById('socialMedia').className = "btn btn-default active";
 barChart.data.datasets[0].data[0] = 60;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 40;
@@ -33,6 +43,8 @@ barChart.update();
 };
 
 document.getElementById('school').onclick = function() {
+setAllButtonDefault();
+document.getElementById('school').className = "btn btn-default active";
 barChart.data.datasets[0].data[0] = 30;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 40;
@@ -52,6 +64,8 @@ barChart.update();
 };
 
 document.getElementById('entertainment').onclick = function() {
+setAllButtonDefault();
+document.getElementById('entertainment').className = "btn btn-default active";
 barChart.data.datasets[0].data[0] = 50;
 barChart.data.datasets[0].data[1] = 70;
 barChart.data.datasets[0].data[2] = 40;
@@ -71,6 +85,8 @@ barChart.update();
 };
 
 document.getElementById('news').onclick = function() {
+setAllButtonDefault();
+document.getElementById('news').className = "btn btn-default active";
 barChart.data.datasets[0].data[0] = 30;
 barChart.data.datasets[0].data[1] = 30;
 barChart.data.datasets[0].data[2] = 24;
@@ -88,8 +104,10 @@ barChart.data.labels[3] = "Guardian";
 barChart.data.labels[4] = "Axios";
 barChart.update();
 };
-/*
+
 document.getElementById('email').onclick = function() {
+setAllButtonDefault();
+document.getElementById('email').className = "btn btn-default active";
 barChart.data.datasets[0].data[0] = 60;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 24;
@@ -107,7 +125,7 @@ barChart.data.labels[3] = "GroupMe";
 barChart.data.labels[4] = "Douban";
 barChart.update();
 };
-*/
+
 var ctx3= document.getElementById("comparisonChart").getContext("2d");
 var barChart = new Chart(ctx3, {
     type: 'bar',
