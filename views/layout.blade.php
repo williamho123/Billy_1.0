@@ -45,37 +45,35 @@
         <li id="You vs. The World Nav"><a href="comparisons">You vs. The World &nbsp; <i class="fa fa-globe" aria-hidden="true"></i></a></li>
         <li id="Settings Nav"><a href="settings">Settings &nbsp; <i class="fa fa-cogs" aria-hidden="true"></i></a></li>
       </ul>
-      <div id="clockdiv">
-    <button id="inch"> &#9650; </button>
-    <button id="incm"> &#9650; </button>
-    <button id="incs"> &#9650; </button>
-
-
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
-  </div>
-  <button id="dech"> &#9660; </button>
-  <button id="decm"> &#9660; </button>
-  <button id="decs"> &#9660; </button>
-  <button id="startb"> START </button>
-  <button id="stopb"> RESET </button>
-  <script src="../js/flipclock.js"></script>
-
-</div>
+    <div id="clockdiv">
+      <button id="inch"> &#9650; </button>
+      <button id="incm"> &#9650; </button>
+      <button id="incs"> &#9650; </button>
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+      <button id="dech"> &#9660; </button>
+      <button id="decm"> &#9660; </button>
+      <button id="decs"> &#9660; </button>
+      <button id="startb"> START </button>
+      <button id="stopb"> RESET </button>
+      <script src="../js/flipclock.js"></script>
+    </div>
   </div>
   <div class="container">
     @yield('content')
     <script type="text/javascript">
       document.getElementById(document.title + " Nav").className = "active";
     </script>
+  </div>
 </body>
 </html>
