@@ -4,6 +4,7 @@
   background-color: rgba(54, 25, 25, 0);
   border: none;
   font-size: 16px;
+  outline: none;
 
 
 }
@@ -49,12 +50,18 @@
   border: none;
   width: 100px;
   color: green;
+  margin-top: 10px;
+  outline: none;
 }
 #stopb{
   background-color: rgba(54, 25, 25, 0);
   border: none;
   width: 100px;
   color: grey;
+  margin-top: 10px;
+  outline: none;
+
+
 
 
 
