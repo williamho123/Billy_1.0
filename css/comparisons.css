@@ -1,8 +1,12 @@
-
 #comparison_bar {
   display:block;
   width:70%;
   float:top;
   float:left;
   margin-left: 10%;
+}
+
+.btn-group-vertical > button{
+    margin-bottom:5px;
+    border-radius:5px !important;
 }

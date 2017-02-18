@@ -10,20 +10,18 @@
     <canvas id="comparisonChart" width="40%" height="40%"></canvas>
   </div>
 
-<h3 class = "category-bar">Categories</h3>
-<div id = "categoryContainer" class = "container-embed">
-    <button id = 'socialMedia'>Social Media</button>
-    <br>
-    <button id = 'school'>School</button>
-    <br>
-    <button id = 'entertainment'>Entertainment</button>
-    <br>
-    <button id = 'news'>News</button>
-    <br>
-    <button id = 'email'>Email</button>
-</div>
+  <h3>Categories</h3>
+  <div id = "categoryContainer" class = "container-embed">
+    <div class="btn-group-vertical">
+      <button id='socialMedia' class="btn btn-default active">Social Media</button>
+      <button id='school' class="btn btn-default">School</button>
+      <button id='entertainment' class="btn btn-default">Entertainment</button>
+      <button id='news' class="btn btn-default">News</button>
+      <button id='email' class="btn btn-default">Email</button>
+    </div>
+  </div>
   <script src="../js/comparisonChart.js"></script>
-  
+
 
 
 @endsection
