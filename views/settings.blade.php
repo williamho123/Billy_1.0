@@ -5,7 +5,7 @@
 @section('content')
   <h1>Settings</h1>
   <hr/>
-  <h3>Categories</h2>
+  <h3>Categories</h3>
     <div class="container">
       Place content
     </div>

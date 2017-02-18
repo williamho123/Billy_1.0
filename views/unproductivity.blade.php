@@ -11,13 +11,12 @@
     <div id="unprodText">
 
  
-    <ul class = "unprodBody">
-        <li> 3 hours on Facebook. You could have completed two problem sets.</li>
+        <p class = 'site1'> 3 hours on Facebook. You could have completed two problem sets.</p>
         <br>
-        <li>4 hours on Canvas. You could have ordered Chinese, had it delivered, and finished two episodes on Netflix.</li>
+        <p class = 'site2'>4 hours on Canvas. You could have ordered Chinese food, had it delivered, and finished two episodes on Netflix.</p>
         <br>
-        <li>1.5 hours on Netflix. You could have grabbed dinner with a friend.</li>
-    </ul>
+        <p class = 'site3'>1.5 hours on Netflix. You could have grabbed dinner with a friend.</p>
+    
 </div>
 
 @endsection
