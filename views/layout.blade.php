@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../css/flipclock.css">
     <link rel="stylesheet" href="../css/unprod.css">
     <link rel="stylesheet" href="../css/mystats.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/comparisons.css">
+
 
 
     <!--JavaScripts-->
