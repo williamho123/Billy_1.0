@@ -13,7 +13,7 @@
   <h3>Categories</h3>
   <div id = "categoryContainer" class = "container-embed">
     <div class="btn-group-vertical">
-      <button id='socialMedia' class="btn btn-default active">Social Media</button>
+      <button id='socialMedia' class="btn btn-default">Social Media</button>
       <button id='school' class="btn btn-default">School</button>
       <button id='entertainment' class="btn btn-default">Entertainment</button>
       <button id='news' class="btn btn-default">News</button>
