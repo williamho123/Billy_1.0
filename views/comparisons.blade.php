@@ -13,7 +13,19 @@
 
 <h3 class = "category-bar">Categories</h3>
 <div class = "container-embed">
-    tabs here
+    <a href = '.'>Social Media</a>
+    <br>
+    <a href = '.'>School</a>
+    <br>
+    <a href = '.'>Entertainment</a>
+    <br>
+    <a href = '.'>News</a>
+    <br>
+    <a href = '.'>Email</a>
+    <br>
+    <a href = '.'>Other</a>
 </div>
+
+
 
 @endsection
