@@ -8,22 +8,22 @@
   <hr/>
   <div id="comparison_bar" class="row">
     <canvas id="comparisonChart" width="40%" height="40%"></canvas>
-    <script src="../js/comparisonChart.js"></script>
   </div>
 
 <h3 class = "category-bar">Categories</h3>
 <div id = "categoryContainer" class = "container-embed">
-    <a id = 'socialMedia'>Social Media</a>
+    <button id = 'socialMedia'>Social Media</button>
     <br>
-    <a id = 'school'>School</a>
+    <button id = 'school'>School</button>
     <br>
-    <a id = 'entertainment'>Entertainment</a>
+    <button id = 'entertainment'>Entertainment</button>
     <br>
-    <a id = 'news'>News</a>
+    <button id = 'news'>News</button>
     <br>
-    <a id = 'email'>Email</a>
+    <button id = 'email'>Email</button>
 </div>
-
+  <script src="../js/comparisonChart.js"></script>
+  
 
 
 @endsection
