@@ -22,6 +22,4 @@
     <a href="#">Other</a>
   </div>
 </div>
-
-
 @endsection

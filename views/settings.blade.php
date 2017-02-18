@@ -6,23 +6,23 @@
   <h1>Settings</h1>
   <hr/>
   <h3>Categories</h3>
-    <div class="container">
+    <div class="container-embed">
       Place content
     </div>
   <h3>Default Timer</h3>
-    <div class="container">
+    <div class="container-embed">
       Place content
     </div>
   <h3>My Statistics Page</h3>
-    <div class="container">
+    <div class="container-embed">
       Place content
     </div>
   <h3>(Un)Productivity Page</h3>
-    <div class="container">
+    <div class="container-embed">
       Place content
     </div>
   <h3>You vs. The World Page</h3>
-    <div class="container">
+    <div class="container-embed">
       Place content
     </div>
 @endsection
