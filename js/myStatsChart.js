@@ -1,7 +1,14 @@
 var data = {
     datasets: [{
       data: [60, 35, 24, 40, 30, 22],
-     }],
+      backgroundColor: [
+            "#FF6384",
+            "#4BC0C0",
+            "#FFCE56",
+            "#E7E9ED",
+            "#36A2EB"
+        ]     
+}],
   labels: ["Facebook", 'YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
 
 };
