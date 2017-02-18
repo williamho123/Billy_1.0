@@ -140,11 +140,11 @@ var config = {
 };
 
 function goToStats(event, array) {
-  window.location.href = "myStats";
+  //window.location.href = "myStats";
 }
 
 var ctx = document.getElementById("myChart").getContext("2d");
-new Chart(ctx, config);
+var myNewChart = new Chart(ctx, config);
 
 /*fix height problem*/
 function adjustChartSize(){
@@ -157,3 +157,13 @@ var h = $(window).height();
 }
 adjustChartSize();  //onload
 $(window).resize(adjustChartSize);
+
+
+document.getElementById("myChart").onclick = function(evt){
+    var activePoints = myNewChart.getElementsAtEvent(evt);
+   //check if clicked on area of graph 
+    if(Object.keys(activePoints).length > 0)
+    {
+	window.location.href = "myStats";    
+    }
+};
