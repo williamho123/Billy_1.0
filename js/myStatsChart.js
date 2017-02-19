@@ -1,3 +1,4 @@
+var category;
 var data = {
     datasets: [{
       data: [60, 35, 24, 40, 30, 22],
@@ -7,7 +8,7 @@ var data = {
             "#FFCE56",
             "#E7E9ED",
             "#36A2EB"
-        ]     
+        ]
 }],
   labels: ["Facebook", 'YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
 

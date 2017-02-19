@@ -12,5 +12,6 @@
   <div id="myStats_canvas_polar" class="row">
     <canvas id="polarChart" width="40%" height="40%"></canvas>
     <script src="../js/myStatsChart.js"></script>
+    <script src="../js/dashboardChart.js"></script>
   </div>
 @endsection
