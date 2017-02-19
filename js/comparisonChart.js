@@ -1,15 +1,15 @@
 var data = {
     datasets: [{
-      data: [35, 24, 40, 30, 22],
+      data: [60, 35, 40, 22, 37],
       label:"You",
       backgroundColor:"rgba(255, 99, 132, 0.2)"
      },
      {
-      data: [45, 40, 25, 25, 50],
+      data: [40, 45, 50, 50, 30],
       label:"The World",
       backgroundColor:"rgba(255, 0, 132, 0.2)"
      }],
-  labels: ['YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
+  labels: ['Facebook', 'Instagram', 'Twitter','GroupMe', 'Douban']
 };
 function setAllButtonDefault() {
 document.getElementById('socialMedia').className = "btn btn-default";
