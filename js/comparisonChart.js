@@ -12,18 +12,18 @@ var data = {
   labels: ['Facebook', 'Instagram', 'Twitter','GroupMe', 'Douban']
 };
 function setAllButtonDefault() {
-document.getElementById('socialMedia').className = "btn btn-default";
-document.getElementById('school').className = "btn btn-default";
-document.getElementById('entertainment').className = "btn btn-default";
-document.getElementById('news').className = "btn btn-default";
-document.getElementById('email').className = "btn btn-default";
+  document.getElementById('socialMedia').className = "btn button";
+  document.getElementById('school').className = "btn button";
+  document.getElementById('entertainment').className = "btn button";
+  document.getElementById('news').className = "btn button";
+  document.getElementById('email').className = "btn button";
 }
 
 
 //onclick event for the menu of categories
 document.getElementById('socialMedia').onclick = function() {
 setAllButtonDefault();
-document.getElementById('socialMedia').className = "btn btn-default active";
+document.getElementById('socialMedia').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 60;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 40;
@@ -44,7 +44,7 @@ barChart.update();
 
 document.getElementById('school').onclick = function() {
 setAllButtonDefault();
-document.getElementById('school').className = "btn btn-default active";
+document.getElementById('school').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 30;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 40;
@@ -65,7 +65,7 @@ barChart.update();
 
 document.getElementById('entertainment').onclick = function() {
 setAllButtonDefault();
-document.getElementById('entertainment').className = "btn btn-default active";
+document.getElementById('entertainment').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 50;
 barChart.data.datasets[0].data[1] = 70;
 barChart.data.datasets[0].data[2] = 40;
@@ -86,7 +86,7 @@ barChart.update();
 
 document.getElementById('news').onclick = function() {
 setAllButtonDefault();
-document.getElementById('news').className = "btn btn-default active";
+document.getElementById('news').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 30;
 barChart.data.datasets[0].data[1] = 30;
 barChart.data.datasets[0].data[2] = 24;
@@ -107,7 +107,7 @@ barChart.update();
 
 document.getElementById('email').onclick = function() {
 setAllButtonDefault();
-document.getElementById('email').className = "btn btn-default active";
+document.getElementById('email').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 60;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 24;
