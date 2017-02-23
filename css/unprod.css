@@ -14,17 +14,55 @@
   color: rgb(229, 9, 20);
 }
 
-.site1:hover{
-    color: lightgray;
-}
-.site1:hover{
-    color: lightgray;
+
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100px;
+  height: 100px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+    border-radius: 10px;
 }
 
-.site2:hover{
-    color: lightgray;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
 
-.site3:hover{
-    color: lightgray;
+.container-embed:hover .image {
+  opacity: 0.3;
+}
+
+.container-embed:hover .middle {
+  opacity: 1;
+}
+
+.site1 {
+  background-color: lightpink;
+  color: rgb(59, 89, 152)
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.site2 {
+  background-color: lightpink;
+  color: rgb(59, 89, 152)
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.site3 {
+  background-color: lightpink;
+  color: rgb(59, 89, 152)
+  font-size: 16px;
+  padding: 16px 32px;
 }
