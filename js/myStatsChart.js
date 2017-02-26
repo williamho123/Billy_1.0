@@ -3,11 +3,14 @@ var data = {
     datasets: [{
       data: [60, 35, 24, 40, 30, 22],
       backgroundColor: [
-            "#FF6384",
-            "#4BC0C0",
-            "#FFCE56",
-            "#E7E9ED",
-            "#36A2EB"
+            "rgba(59, 89, 152, 1)",  //Facebook
+            "rgba(187, 0, 0, 1)",   //YouTube
+            "rgba(62, 122, 171, 1)", //Piazza
+            "rgba(214, 64, 39, 1)", //Canvas
+            "rgba(78, 45, 131, 1)", //Caesar
+            "rgba(241, 241, 241, 1)",  //Gmail
+            //  "rgba(18, 86, 136, 1)",  //Instagram
+            //  "rgba(85, 172, 238, 1)",  //Twitter
         ]
 }],
   labels: ["Facebook", 'YouTube', 'Piazza', 'Canvas','Caesar', 'Gmail']
@@ -37,11 +40,13 @@ var data2 = {
     datasets: [{
         data: [60, 35, 24, 40, 30, 22],
         backgroundColor: [
-            "#FF6384",
-            "#4BC0C0",
-            "#FFCE56",
-            "#E7E9ED",
-            "#36A2EB"
+            "rgba(59, 89, 152, 1)",
+            "rgba(187, 0, 0, 1)",
+            "rgba(62, 122, 171, 1)",
+            "rgba(214, 64, 39, 1)",
+            "rgba(78, 45, 131, 1)",
+            "rgba(241, 241, 241, 1)",
+
         ],
         label: 'My dataset' // for legend
     }],
