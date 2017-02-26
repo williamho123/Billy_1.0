@@ -15,3 +15,8 @@
   margin-top : -50%;
   margin-left : 48%;
 }
+
+.btn-group > button {
+  margin-right: 5px;
+  border-radius:5px !important;
+}
