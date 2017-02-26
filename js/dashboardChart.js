@@ -168,6 +168,7 @@ document.getElementById("myChart").onclick = function(evt){
 
 			//a global variable
 			category = title;
-					window.location.href = "myStats";
+			localStorage.setItem("category", title);
+			window.location.href = "myStats";
     }
 };
