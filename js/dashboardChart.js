@@ -69,7 +69,7 @@ Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
 
 					if (vm.circumference > 0.15) { // Trying to hide label when it doesn't fit in segment
 						ctx.beginPath();
-						ctx.font = helpers.fontString(20, opts.defaultFontStyle, opts.defaultFontFamily);
+						ctx.font = helpers.fontString(18, opts.defaultFontStyle, "raleway");
 						ctx.fillStyle = "#ffffff";
 						ctx.textBaseline = "top";
 						ctx.textAlign = "center";
@@ -106,21 +106,21 @@ var config = {
     datasets: [{
       data: [30, 29, 10, 12, 19],
       backgroundColor: [
-      '#36A2EB',
-      'rgba(153, 102, 255, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(75, 192, 192, 1)',
+			'rgba(58, 154, 179, 1)',
+			'rgba(75, 192, 192, 1)',
+      'rgba(178, 172, 218, 1)',
+			'rgba(115, 128, 189, 1)',
       '#475a77'
       ],
       borderColor: [
-     '#36A2EB',
-     'rgba(153, 102, 255, 1)',
-     'rgba(255, 206, 86, 1)',
-     'rgba(75, 192, 192, 1)',
-     '#475a77'
+				'#ffffff',
+				'#ffffff',
+				'#ffffff',
+				'#ffffff',
+				'#ffffff'
      ],
      borderWidth: 1,
-     hoverBorderWidth:5
+     hoverBorderWidth:3
      }],
   labels: ["Social Media", 'School', 'Entertainment', 'News','Shopping']
   },
@@ -128,7 +128,7 @@ var config = {
     responsive: true,
     legend: {
       position: 'right',
-     labels: {fontSize: 13},
+     labels: {fontSize: 13, fontFamily: "raleway"},
              onClick: function(event, legendItem) {}
     },
     animation: {
