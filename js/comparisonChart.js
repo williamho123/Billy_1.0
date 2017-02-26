@@ -3,7 +3,7 @@ var data = {
       data: [60, 35, 40, 22, 37],
       label:"Me",
       backgroundColor:"rgba(255, 99, 132, 0.2)"
-     },
+      },
      {
       data: [40, 45, 50, 50, 30],
       label:"The World",
@@ -55,7 +55,7 @@ barChart.data.datasets[1].data[1] = 40;
 barChart.data.datasets[1].data[2] = 50;
 barChart.data.datasets[1].data[3] = 55;
 barChart.data.datasets[1].data[4] = 25;
-barChart.data.labels[0] = "CourseHero";
+barChart.data.labels[0] = "Scribd";
 barChart.data.labels[1] = "Chegg";
 barChart.data.labels[2] = "Piazza";
 barChart.data.labels[3] = "Canvas";
@@ -98,8 +98,8 @@ barChart.data.datasets[1].data[2] = 45;
 barChart.data.datasets[1].data[3] = 50;
 barChart.data.datasets[1].data[4] = 35;
 barChart.data.labels[0] = "CNN";
-barChart.data.labels[1] = "Daily Northwestern";
-barChart.data.labels[2] = "Washington Post";
+barChart.data.labels[1] = "Daily";
+barChart.data.labels[2] = "NY Times";
 barChart.data.labels[3] = "Guardian";
 barChart.data.labels[4] = "Axios";
 barChart.update();
@@ -130,6 +130,30 @@ var ctx3= document.getElementById("comparisonChart").getContext("2d");
 var barChart = new Chart(ctx3, {
     type: 'bar',
     data: data,
+    options: {
+	 legend: {
+	onClick: function(event, legendItem) {},
+        labels: {
+           fontSize:18
+        }},
+	scales: {
+        xAxes: [{
+            ticks: {
+                fontSize: 20
+            }
+        }],
+	 yAxes: [{
+            ticks: {
+                fontSize: 20
+            },
+	    scaleLabel: {
+       		 display: true,
+        	labelString: 'Minutes',
+		fontSize: 20
+      }
+        }]
+    }	
+    }
 });
 
 function adjustChartSize(){
