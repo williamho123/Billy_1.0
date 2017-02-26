@@ -1,7 +1,7 @@
 var data = {
     datasets: [{
       data: [60, 35, 40, 22, 37],
-      label:"You",
+      label:"Me",
       backgroundColor:"rgba(255, 99, 132, 0.2)"
      },
      {
@@ -16,7 +16,7 @@ function setAllButtonDefault() {
   document.getElementById('school').className = "btn button";
   document.getElementById('entertainment').className = "btn button";
   document.getElementById('news').className = "btn button";
-  document.getElementById('email').className = "btn button";
+  document.getElementById('shopping').className = "btn button";
 }
 
 
@@ -105,9 +105,9 @@ barChart.data.labels[4] = "Axios";
 barChart.update();
 };
 
-document.getElementById('email').onclick = function() {
+document.getElementById('shopping').onclick = function() {
 setAllButtonDefault();
-document.getElementById('email').className = "btn button btn-active";
+document.getElementById('shopping').className = "btn button btn-active";
 barChart.data.datasets[0].data[0] = 60;
 barChart.data.datasets[0].data[1] = 35;
 barChart.data.datasets[0].data[2] = 24;
@@ -118,11 +118,11 @@ barChart.data.datasets[1].data[1] = 45;
 barChart.data.datasets[1].data[2] = 25;
 barChart.data.datasets[1].data[3] = 50;
 barChart.data.datasets[1].data[4] = 15;
-barChart.data.labels[0] = "Facebook";
-barChart.data.labels[1] = "Instagram";
-barChart.data.labels[2] = "Twitter";
-barChart.data.labels[3] = "GroupMe";
-barChart.data.labels[4] = "Douban";
+barChart.data.labels[0] = "Amazon";
+barChart.data.labels[1] = "EBay";
+barChart.data.labels[2] = "CraigsList";
+barChart.data.labels[3] = "Alibaba";
+barChart.data.labels[4] = "Taobao";
 barChart.update();
 };
 

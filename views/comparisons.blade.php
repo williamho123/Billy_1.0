@@ -1,9 +1,9 @@
 @extends('layout')
 
-@section('title','You vs. The World')
+@section('title','Me vs. The World')
 
 @section('content')
-  <h1>You vs. The World</h1>
+  <h1>Me vs. The World</h1>
   <hr/>
   <div id="category_select" class="container-embed">
     <div class="btn-group-vertical">
@@ -12,7 +12,7 @@
       <button id="school" class="btn button">School</button>
       <button id="entertainment" class="btn button">Entertainment</button>
       <button id="news" class="btn button">News</button>
-      <button id="email" class="btn button">Email</button>
+      <button id="shopping" class="btn button">Shopping</button>
     </div>
   </div>
   <div id="comparison_bar" class="row">

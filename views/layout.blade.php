@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/mystats.css">
     <link rel="stylesheet" href="../css/settings.css">
     <link rel="stylesheet" href="../css/comparisons.css">
-    
+
     <!--JavaScripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -46,7 +46,7 @@
         <li id="Dashboard Nav"><a href="/">Dashboard &nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i></a></li>
         <li id="My Statistics Nav"><a href="myStats">My Statistics &nbsp; <i class="fa fa-line-chart" aria-hidden="true"></i></a></li>
         <li id="(Un)Productivity Nav"><a href="unproductivity">(Un)Productivity &nbsp; <i class="fa fa-hourglass-half" aria-hidden="true"></i></a></li>
-        <li id="You vs. The World Nav"><a href="comparisons">You vs. The World &nbsp; <i class="fa fa-globe" aria-hidden="true"></i></a></li>
+        <li id="Me vs. The World Nav"><a href="comparisons">Me vs. The World &nbsp; <i class="fa fa-globe" aria-hidden="true"></i></a></li>
         <li id="Settings Nav"><a href="settings">Settings &nbsp; <i class="fa fa-cogs" aria-hidden="true"></i></a></li>
       </ul>
     <div id="clockdiv">
