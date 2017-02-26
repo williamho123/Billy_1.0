@@ -1,68 +1,62 @@
-#unprodText {
-  font-weight: bold;
+.red {
+  color: red;
 }
 
-#fb {
-  color: rgb(59, 89, 152);
+.green {
+  color: #43CD80;
 }
 
-#cs {
-  color: rgb(78, 42, 132);
+.offset {
+  margin-top: 7rem;
 }
 
-#nf {
-  color: rgb(229, 9, 20);
-}
-
-
-
-
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100px;
-  height: 100px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-    border-radius: 10px;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
+div.img-container {
+  width: 250px;
+  height: 168px;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
-.container-embed:hover .image {
-  opacity: 0.3;
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
-.container-embed:hover .middle {
+img.cropped {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: .5em;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+
+.tooltip-wrap:hover > img.cropped {
   opacity: 1;
 }
 
-.site1 {
-  background-color: lightpink;
-  color: rgb(59, 89, 152)
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.site2 {
-  background-color: lightpink;
-  color: rgb(59, 89, 152)
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-.site3 {
-  background-color: lightpink;
-  color: rgb(59, 89, 152)
-  font-size: 16px;
-  padding: 16px 32px;
+.tooltip-content > p {
+  font-size: 1.8rem;
 }

@@ -5,35 +5,101 @@
 @section('content')
   <h1>(Un)Productivity</h1>
   <hr/>
-<h2>Top 3 Websites</h2>
-<h2>You Spent:</h2>
-<br>
-    <div id="unprodText" class="container-embed">
-        <img src="http://1.bp.blogspot.com/-XiLOdfhlkWM/VQLP0EKDrVI/AAAAAAAAXwM/tvzCwhKdxw4/s1600/F_icon.svg.png" class="image">
-        <div class = 'middle'>
-        <p class = 'site1'> 3 hours on <span id="fb">Facebook</span>. You could have completed two problem sets.</p>
-        </div>
-</div>
-        <br>
-
-    <div id="unprodText" class="container-embed">
-        <img src="http://www.northwestern.edu/images/northwestern-thumbnail.jpg" class="image">
-        <div class = 'middle'>
-        <p class = 'site1'>4 hours on <span id="cs">Caesar</span>. You could have ordered Chinese food, had it delivered, and finished two episodes on Netflix.</p>
-        </div>
-</div>
-
-        <br>
-
-    <div id="unprodText" class="container-embed">
-        <img src="https://www.mynetfone.com.au/media/blog/2016/netflix-logo.png" class="image">
-        <div class = 'middle'>
-        <p class = 'site3'>1.5 hours on <span id="nf">Netflix</span>. You could have grabbed dinner with a friend.</p>
-        </div>
-</div>
-
-
-
-
-
+  <br>
+  <div class="container-embed">
+    <div class="row">
+      <div class="col-md-4 img-container tooltip-wrap">
+          <img src="../img/fb-art.png" class="cropped">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">3 hours</span> on Facebook. You could have completed <span class="green">2 problem sets.</span>
+            </p>
+         </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+        <img src="../img/twitter.png" class="cropped">
+        <div class="tooltip-content">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">1 hour</span> on Twitter. You could have <span class="green">slept 1 hour earlier.</span>
+            </p>
+         </div>
+       </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+        <img src="../img/instagram-logo.png" class="cropped">
+        <div class="tooltip-content">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">4 hours</span> on Instagram. You need to <span class="green">get a life.</span>
+            </p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="row offset">
+      <div class="col-md-4 img-container tooltip-wrap">
+        <img src="../img/northwestern-thumbnail.jpg" class="cropped">
+        <div class="tooltip-content">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">1 hour</span> on Caesar. You could have studied for <span class="green">your economics quiz.</span>
+            </p>
+         </div>
+       </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+        <img src="../img/Piazza-Icon.png" class="cropped">
+        <div class="tooltip-content">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">2 hours</span> on Piazza. You could have finished your <span class="green">coding project.</span>
+            </p>
+         </div>
+       </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+        <img src="../img/netflix.png" class="cropped">
+        <div class="tooltip-content">
+          <div class="tooltip-content">
+            <p>
+              <span class="red">8 hours</span> on Netflix. You could have gotten a <span class="green">full nights sleep!</span>
+            </p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="row offset">
+      <div class="col-md-4 img-container tooltip-wrap">
+          <img src="../img/amazon-logo.jpg" class="cropped">
+          <div class="tooltip-content">
+            <div class="tooltip-content">
+              <p>
+                <span class="red">2 hours</span> on Amazon. You could have responded to <span class="green">20 emails.</span>
+              </p>
+           </div>
+         </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+          <img src="../img/youtube.png" class="cropped">
+          <div class="tooltip-content">
+            <div class="tooltip-content">
+              <p>
+                <span class="red">4 hours</span> on YouTube. You could have studied for your <span class="green">orgo midterm.</span>
+              </p>
+           </div>
+         </div>
+      </div>
+      <div class="col-md-4 img-container tooltip-wrap">
+          <img src="../img/cnn.png" class="cropped">
+          <div class="tooltip-content">
+            <div class="tooltip-content">
+              <p>
+                <span class="red">1 hour</span> on CNN. You could have <span class="green">worked out at the gym.</span>
+              </p>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
 @endsection
