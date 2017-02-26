@@ -106,28 +106,29 @@ var config = {
     datasets: [{
       data: [30, 29, 10, 12, 19],
       backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)'
+      '#36A2EB',
+      'rgba(153, 102, 255, 1)',
+      'rgba(255, 206, 86, 1)',
+      'rgba(75, 192, 192, 1)',
+      '#475a77'
       ],
       borderColor: [
-     'rgba(255,99,132,1)',
-     'rgba(54, 162, 235, 1)',
+     '#36A2EB',
+     'rgba(153, 102, 255, 1)',
      'rgba(255, 206, 86, 1)',
      'rgba(75, 192, 192, 1)',
-     'rgba(153, 102, 255, 1)'
+     '#475a77'
      ],
      borderWidth: 1,
      hoverBorderWidth:5
      }],
-  labels: ["Social Media", 'School', 'Entertainment', 'News','Email']
+  labels: ["Social Media", 'School', 'Entertainment', 'News','Shopping']
   },
   options: {
     responsive: true,
     legend: {
       position: 'right',
+			labels: {fontSize: 13,}
     },
     animation: {
       animateScale: true,
