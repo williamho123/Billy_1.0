@@ -69,8 +69,8 @@ Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
 
 					if (vm.circumference > 0.15) { // Trying to hide label when it doesn't fit in segment
 						ctx.beginPath();
-						ctx.font = helpers.fontString(opts.defaultFontSize, opts.defaultFontStyle, opts.defaultFontFamily);
-						ctx.fillStyle = "#000000";
+						ctx.font = helpers.fontString(20, opts.defaultFontStyle, opts.defaultFontFamily);
+						ctx.fillStyle = "#ffffff";
 						ctx.textBaseline = "top";
 						ctx.textAlign = "center";
             // Round percentage in a way that it always adds up to 100%
@@ -128,7 +128,8 @@ var config = {
     responsive: true,
     legend: {
       position: 'right',
-			labels: {fontSize: 13,}
+     labels: {fontSize: 13},
+             onClick: function(event, legendItem) {}
     },
     animation: {
       animateScale: true,
@@ -136,7 +137,6 @@ var config = {
     }
   }
 };
-
 
 var ctx = document.getElementById("myChart").getContext("2d");
 var myNewChart = new Chart(ctx, config);
