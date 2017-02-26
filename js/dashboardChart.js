@@ -134,6 +134,11 @@ var config = {
     animation: {
       animateScale: true,
       animateRotate: true
+    },
+    hover: {
+      onHover: function(e) {
+        $("#dashboard_canvas").css("cursor", e[0] ? "pointer" : "default");
+     }
     }
   }
 };
@@ -152,7 +157,6 @@ var h = $(window).height();
 }
 adjustChartSize();  //onload
 $(window).resize(adjustChartSize);
-
 
 document.getElementById("myChart").onclick = function(evt){
     var activePoints = myNewChart.getElementsAtEvent(evt);
