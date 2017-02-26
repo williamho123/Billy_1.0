@@ -134,25 +134,30 @@ var barChart = new Chart(ctx3, {
 	 legend: {
 	onClick: function(event, legendItem) {},
         labels: {
-           fontSize:18
+           fontSize:18,
+           fontFamily: "Raleway"
         }},
 	scales: {
         xAxes: [{
             ticks: {
-                fontSize: 20
+                fontSize: 19,
+                fontFamily: "Raleway"
+
             }
         }],
 	 yAxes: [{
             ticks: {
-                fontSize: 20
+                fontSize: 20,
+                fontFamily: "Raleway"
             },
 	    scaleLabel: {
        		 display: true,
         	labelString: 'Minutes',
-		fontSize: 20
+		        fontSize: 20,
+            fontFamily: "Raleway"
       }
         }]
-    }	
+    }
     }
 });
 
