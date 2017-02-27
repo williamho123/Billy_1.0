@@ -2631,7 +2631,7 @@ module.exports = function(Chart) {
 				},
 				label: function(tooltipItem, data) {
 					var dataLabel = data.labels[tooltipItem.index];
-					var value = ': ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+ '  minutes';
+					var value = ': ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]+ '  %';
 
 					if (helpers.isArray(dataLabel)) {
 						// show value on first line of multiline label
@@ -3268,7 +3268,7 @@ module.exports = function(Chart) {
 					return '';
 				},
 				label: function(tooltipItem, data) {
-					return data.labels[tooltipItem.index] + ': ' + tooltipItem.yLabel+ ' minutes';
+					return data.labels[tooltipItem.index] + ': ' + tooltipItem.yLabel+ ' %';
 				}
 			}
 		}
