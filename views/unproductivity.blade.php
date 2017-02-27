@@ -12,7 +12,7 @@
           <img src="../img/fb-art.png" class="cropped">
           <div class="tooltip-content">
             <p>
-              <span class="red">3 hours</span> on Facebook. You could have completed <span class="green">2 problem sets.</span>
+              <span class="red">3 hours</span> on Facebook. You could have finished <span class="green">2 problem sets.</span>
             </p>
          </div>
       </div>
