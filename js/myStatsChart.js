@@ -47,7 +47,11 @@ data = defaultData;
 
 var options = {
   legend:{
-    display:false
+    display:false,
+		labels: {
+			 fontSize:18,
+			 fontFamily: "Raleway"
+		}
   },
   tooltops :{
     callbacks: {
@@ -55,8 +59,30 @@ var options = {
                   return tooltipItem.yLabel;
            }
         }
-  }
+  },
+ scales: {
+			 xAxes: [{
+					 ticks: {
+							 fontSize: 12,
+							 fontFamily: "Raleway"
+
+					 }
+			 }],
+	yAxes: [{
+					 ticks: {
+							 fontSize: 20,
+							 fontFamily: "Raleway"
+					 },
+		 scaleLabel: {
+					display: true,
+				 labelString: 'Minutes',
+					 fontSize: 20,
+					 fontFamily: "Raleway"
+		 }
+			 }]
+	 }
 };
+
 var ctx = document.getElementById("barChart").getContext("2d");
 var myBarChart = new Chart(ctx, {
     type: 'bar',
@@ -83,10 +109,20 @@ var defaultData2 = {
 
 data2 = defaultData2;
 
+var options2 = {
+  legend:{
+		onClick: function(event, legendItem) {},
+		labels: {
+			 fontSize:15,
+			 fontFamily: "Raleway"
+		}
+  }
+};
 var ctx2 = document.getElementById("polarChart").getContext("2d");
 var myPolarChart = new Chart(ctx2, {
 	type: 'polarArea',
-	data: data2
+	data: data2,
+	options:options2
 });
 
 
