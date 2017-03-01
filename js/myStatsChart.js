@@ -71,8 +71,10 @@ var options = {
 	yAxes: [{
 					 ticks: {
 							 fontSize: 20,
-							 fontFamily: "Raleway"
-					 },
+							 fontFamily: "Raleway",
+					 		 suggestedMin: 0, 
+							 beginAtZero:true
+						},
 		 scaleLabel: {
 					display: true,
 				 labelString: 'Minutes',
