@@ -140,8 +140,11 @@ function updateChart() {
 			myBarChart.data.labels[3] = "GroupMe";
 			myBarChart.data.labels[4] = "Douban";
 			//insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
-//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(78, 45, 131, 1)"; facebook
-
+			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(59, 89, 152, 1)"; //facebook
+			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(18, 86, 136, 1)"; //Instagram
+			myBarChart.data.datasets[0].backgroundColor[2] = "rgba(85, 172, 238, 1)"; //twitter
+			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 175, 240, 1)"; //groupme
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(46, 150, 61, 1)"; //douban
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 30;
 			myPolarChart.data.datasets[0].data[1] = 10;
@@ -153,6 +156,11 @@ function updateChart() {
 			myPolarChart.data.labels[2] = "Twitter";
 			myPolarChart.data.labels[3] = "GroupMe";
 			myPolarChart.data.labels[4] = "Douban";
+			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(59, 89, 152, 1)"; //facebook
+			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(18, 86, 136, 1)"; //Instagram
+			myPolarChart.data.datasets[0].backgroundColor[2] = "rgba(85, 172, 238, 1)"; //twitter
+			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 175, 240, 1)"; //groupme
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(46, 150, 61, 1)"; //douban
 			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
 			//			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(78, 45, 131, 1)";
 
@@ -170,8 +178,11 @@ function updateChart() {
 			myBarChart.data.labels[2] = "Piazza";
 			myBarChart.data.labels[3] = "Canvas";
 			myBarChart.data.labels[4] = "Caesar";
-			//insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
-//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(78, 45, 131, 1)"; facebook
+			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(26, 123, 186, 1)"; //scribd
+			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(240, 125, 0, 1)"; //chegg
+			myBarChart.data.datasets[0].backgroundColor[2] = "rgba(62, 122, 171, 1)"; //piazza
+			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(214, 64, 39, 1)"; //canvas
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(78, 42, 132, 1)"; //caesar
 
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 10;
@@ -184,8 +195,11 @@ function updateChart() {
 			myPolarChart.data.labels[2] = "Piazza";
 			myPolarChart.data.labels[3] = "Canvas";
 			myPolarChart.data.labels[4] = "Caesar";
-			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
-			//			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(78, 45, 131, 1)";
+			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(26, 123, 186, 1)"; //scribd
+			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(240, 125, 0, 1)"; //chegg
+			myPolarChart.data.datasets[0].backgroundColor[2] = "rgba(62, 122, 171, 1)"; //piazza
+			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(214, 64, 39, 1)"; //canvas
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(78, 42, 132, 1)"; //caesar
 
 			myPolarChart.update();
 			 document.getElementById('school').className = "btn button btn-active";
