@@ -32,9 +32,10 @@
 
 #clockdiv div > span{
     width: 47px;
-    height: 52px;
-    padding: 15px;
-    background: #bf6378;
+    height: 25px;
+    padding: 0px;
+    font-size: 18px;
+    background: rgba(54, 25, 25, 0);/*#bf6378;*/
     display: inline-block;
 }
 
