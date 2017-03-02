@@ -44,7 +44,7 @@
       <ul class="nav navbar-nav">
         <li id="Dashboard Nav"><a href="/">Dashboard &nbsp;<i class="fa fa-tachometer" aria-hidden="true"></i></a></li>
         <li id="My Statistics Nav"><a href="myStats">My Statistics &nbsp; <i class="fa fa-line-chart" aria-hidden="true"></i></a></li>
-        <li id="(Un)Productivity Nav"><a href="unproductivity">(Un)Productivity &nbsp; <i class="fa fa-hourglass-half" aria-hidden="true"></i></a></li>
+        <li id="My (Un)Productivity Nav"><a href="unproductivity">My (Un)Productivity &nbsp; <i class="fa fa-hourglass-half" aria-hidden="true"></i></a></li>
         <li id="Me vs. The World Nav"><a href="comparisons">Me vs. The World &nbsp; <i class="fa fa-globe" aria-hidden="true"></i></a></li>
         <li id="Settings Nav"><a href="settings">Settings &nbsp; <i class="fa fa-cogs" aria-hidden="true"></i></a></li>
       </ul>

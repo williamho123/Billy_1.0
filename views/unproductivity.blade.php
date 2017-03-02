@@ -1,9 +1,9 @@
 @extends('layout')
 
-@section('title','(Un)Productivity')
+@section('title','My (Un)Productivity')
 
 @section('content')
-  <h1>(Un)Productivity</h1>
+  <h1>My (Un)Productivity</h1>
   <hr/>
   <br>
   <div class="container-embed">

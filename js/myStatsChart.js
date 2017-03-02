@@ -72,7 +72,7 @@ var options = {
 					 ticks: {
 							 fontSize: 20,
 							 fontFamily: "Raleway",
-					 		 suggestedMin: 0, 
+					 		 suggestedMin: 0,
 							 beginAtZero:true
 						},
 		 scaleLabel: {
@@ -131,6 +131,7 @@ var myPolarChart = new Chart(ctx2, {
 function updateChart() {
 	setAllButtonDefault();
 	if (category == "Social Media") {
+		localStorage.setItem("category", "Social Media");
 			myBarChart.data.datasets[0].data[0] = 60;
 			myBarChart.data.datasets[0].data[1] = 35;
 			myBarChart.data.datasets[0].data[2] = 40;
@@ -139,14 +140,14 @@ function updateChart() {
 			myBarChart.data.labels[0] = "Facebook";
 			myBarChart.data.labels[1] = "Instagram";
 			myBarChart.data.labels[2] = "Twitter";
-			myBarChart.data.labels[3] = "GroupMe";
-			myBarChart.data.labels[4] = "Douban";
+			myBarChart.data.labels[3] = "Douban";
+			myBarChart.data.labels[4] = "GroupMe";
 			//insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
 			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(59, 89, 152, 1)"; //facebook
 			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(18, 86, 136, 1)"; //Instagram
 			myBarChart.data.datasets[0].backgroundColor[2] = "rgba(85, 172, 238, 1)"; //twitter
-			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 175, 240, 1)"; //groupme
-			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(46, 150, 61, 1)"; //douban
+			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(46, 150, 61, 1)"; //douban
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(0, 175, 240, 1)"; //groupme
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 30;
 			myPolarChart.data.datasets[0].data[1] = 10;
@@ -156,13 +157,14 @@ function updateChart() {
 			myPolarChart.data.labels[0] = "Facebook";
 			myPolarChart.data.labels[1] = "Instagram";
 			myPolarChart.data.labels[2] = "Twitter";
-			myPolarChart.data.labels[3] = "GroupMe";
-			myPolarChart.data.labels[4] = "Douban";
+			myPolarChart.data.labels[3] = "Douban";
+			myPolarChart.data.labels[4] = "GroupMe";
 			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(59, 89, 152, 1)"; //facebook
 			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(18, 86, 136, 1)"; //Instagram
 			myPolarChart.data.datasets[0].backgroundColor[2] = "rgba(85, 172, 238, 1)"; //twitter
-			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 175, 240, 1)"; //groupme
-			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(46, 150, 61, 1)"; //douban
+			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(46, 150, 61, 1)"; //douban
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(0, 175, 240, 1)"; //groupme
+
 			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
 			//			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(78, 45, 131, 1)";
 
@@ -170,6 +172,7 @@ function updateChart() {
 			document.getElementById('socialMedia').className = "btn button btn-active";
 		}
 		else if (category == "School") {
+			localStorage.setItem("category", "School");
 			myBarChart.data.datasets[0].data[0] = 30;
 			myBarChart.data.datasets[0].data[1] = 35;
 			myBarChart.data.datasets[0].data[2] = 40;
@@ -207,18 +210,23 @@ function updateChart() {
 			 document.getElementById('school').className = "btn button btn-active";
 		}
 		else if (category == "Entertainment") {
+			localStorage.setItem("category", "Entertainment");
 			myBarChart.data.datasets[0].data[0] = 50;
 			myBarChart.data.datasets[0].data[1] = 70;
 			myBarChart.data.datasets[0].data[2] = 40;
 			myBarChart.data.datasets[0].data[3] = 25;
 			myBarChart.data.datasets[0].data[4] = 25;
 			myBarChart.data.labels[0] = "YouTube";
-			myBarChart.data.labels[1] = "Netflix";
+			myBarChart.data.labels[1] = "Vine";
 			myBarChart.data.labels[2] = "HBO";
-			myBarChart.data.labels[3] = "Vine";
+			myBarChart.data.labels[3] = "Netflix";
 			myBarChart.data.labels[4] = "Vimeo";
 //insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
-//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)"; youtube
+			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)"; //youtube
+			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(85, 190, 150, 1)"; //Vine
+			myBarChart.data.datasets[0].backgroundColor[2] = "black"; // HBO
+			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(229, 9, 20, 1)";	// netflix
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(26, 183, 234, 1)" ; //vimeo
 
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 40;
@@ -227,17 +235,23 @@ function updateChart() {
 			myPolarChart.data.datasets[0].data[3] = 12;
 			myPolarChart.data.datasets[0].data[4] = 13;
 			myPolarChart.data.labels[0] = "YouTube";
-			myPolarChart.data.labels[1] = "Netflix";
+			myPolarChart.data.labels[1] = "Vine";
 			myPolarChart.data.labels[2] = "HBO";
-			myPolarChart.data.labels[3] = "Vine";
+			myPolarChart.data.labels[3] = "Netflix";
 			myPolarChart.data.labels[4] = "Vimeo";
 			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
 			//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)"; youtube
+			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)"; //youtube
+			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(85, 190, 150, 1)"; //Vine
+			myPolarChart.data.datasets[0].backgroundColor[2] = "black"; // HBO
+			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(229, 9, 20, 1)";	// netflix
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(26, 183, 234, 1)" ; //vimeo
 
 			myPolarChart.update();
 				 document.getElementById('entertainment').className = "btn button btn-active";
 		}
 		else if (category == "News") {
+			localStorage.setItem("category", "News");
 			myBarChart.data.datasets[0].data[0] = 30;
 			myBarChart.data.datasets[0].data[1] = 30;
 			myBarChart.data.datasets[0].data[2] = 24;
@@ -249,7 +263,12 @@ function updateChart() {
 			myBarChart.data.labels[3] = "Guardian";
 			myBarChart.data.labels[4] = "Axios";
 			//insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
-			//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)";
+			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(203, 0, 0, 1)"; //cnn
+			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(78, 42, 132, 1)"; //Daily
+			myBarChart.data.datasets[0].backgroundColor[2] = "black"; // NY Times
+			myBarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 86, 137, 1)";	// Guardian
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(0, 141, 200, 1)" ; //Axios
+
 
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 20;
@@ -263,24 +282,33 @@ function updateChart() {
 			myPolarChart.data.labels[3] = "Guardian";
 			myPolarChart.data.labels[4] = "Axios";
 			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
-			//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)";
+			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(203, 0, 0, 1)"; //cnn
+			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(78, 42, 132, 1)"; //Daily
+			myPolarChart.data.datasets[0].backgroundColor[2] = "black"; // NY Times
+			myPolarChart.data.datasets[0].backgroundColor[3] = "rgba(0, 86, 137, 1)";	// Guardian
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(0, 141, 200, 1)" ; //Axios
 
 			myPolarChart.update();
 			document.getElementById('news').className = "btn button btn-active";
 		}
 		else if (category == "Shopping") {
+			localStorage.setItem("category", "Shopping");
 			myBarChart.data.datasets[0].data[0] = 60;
 			myBarChart.data.datasets[0].data[1] = 35;
 			myBarChart.data.datasets[0].data[2] = 24;
 			myBarChart.data.datasets[0].data[3] = 22;
 			myBarChart.data.datasets[0].data[4] = 37;
 			myBarChart.data.labels[0] = "Amazon";
-			myBarChart.data.labels[1] = "EBay";
-			myBarChart.data.labels[2] = "CraigsList";
-			myBarChart.data.labels[3] = "Alibaba";
+			myBarChart.data.labels[1] = "CraigsList";
+			myBarChart.data.labels[2] = "EBay";
+			myBarChart.data.labels[3] = "Outnet";
 			myBarChart.data.labels[4] = "Taobao";
 			//insert background color like this for bar chart:  backgroundColor[i] where i is the index of data
-			//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)";
+			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(255, 153, 0, 1)"; //amazon
+			myBarChart.data.datasets[0].backgroundColor[1] = "rgba(128, 0, 128, 1)"; //craigslist
+			myBarChart.data.datasets[0].backgroundColor[2] = "rgba(133, 183, 22, 1)"; // ebay
+			myBarChart.data.datasets[0].backgroundColor[3] = "black";	// nordstrom
+			myBarChart.data.datasets[0].backgroundColor[4] = "rgba(255, 101, 55, 1)" ; //taobao
 
 			myBarChart.update();
 			myPolarChart.data.datasets[0].data[0] = 25;
@@ -289,12 +317,16 @@ function updateChart() {
 			myPolarChart.data.datasets[0].data[3] = 20;
 			myPolarChart.data.datasets[0].data[4] = 12;
 			myPolarChart.data.labels[0] = "Amazon";
-			myPolarChart.data.labels[1] = "EBay";
-			myPolarChart.data.labels[2] = "CraigsList";
-			myPolarChart.data.labels[3] = "Alibaba";
+			myPolarChart.data.labels[1] = "CraigsList";
+			myPolarChart.data.labels[2] = "EBay";
+			myPolarChart.data.labels[3] = "Outnet";
 			myPolarChart.data.labels[4] = "Taobao";
 			//insert background color like this for polar chart:  backgroundColor[i] where i is the index of data
-			//			myBarChart.data.datasets[0].backgroundColor[0] = "rgba(187, 0, 0, 1)";
+			myPolarChart.data.datasets[0].backgroundColor[0] = "rgba(255, 153, 0, 1)"; //amazon
+			myPolarChart.data.datasets[0].backgroundColor[1] = "rgba(128, 0, 128, 1)"; //craigslist
+			myPolarChart.data.datasets[0].backgroundColor[2] = "rgba(133, 183, 22, 1)"; // ebay
+			myPolarChart.data.datasets[0].backgroundColor[3] = "black";	// nordstrom
+			myPolarChart.data.datasets[0].backgroundColor[4] = "rgba(255, 101, 55, 1)" ; //taobao
 
 			myPolarChart.update();
 			 document.getElementById('shopping').className = "btn button btn-active";
