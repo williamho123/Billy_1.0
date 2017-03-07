@@ -39,13 +39,11 @@ var secondsSpan = clock.querySelector('.seconds');
 
 if (document.getElementById('timerDone')) {
   document.getElementById('timerDone').onclick = function(){
-    console.log("timedone clicked");
     var min = parseFloat(document.getElementById('minInput').value);
-    if (isNaN(min)) min = 1;
     var hour = parseFloat(document.getElementById('hourInput').value);
-    if (isNaN(hour)) hour = 0;
-    console.log(min + " "+ hour );
-    localStorage.setItem('defaultTime', (hour*60+min)*60);
+    if (!(isNaN(hour) || isNaN(min))) {
+      localStorage.setItem('defaultTime', (hour*60+min)*60);
+    }
   }
 }
 
