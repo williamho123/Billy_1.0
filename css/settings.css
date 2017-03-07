@@ -48,5 +48,6 @@
 }
 
 #timerDone {
-  background-color: rgb(62,71,70);
+  background-color: darkgray;
+    border-color: darkgray;
 }
