@@ -1,3 +1,7 @@
+a, a:active, a:focus {
+  outline: none;
+}
+
 .panel-heading a:after {
     font-family:'Glyphicons Halflings';
     content:"\e114";
@@ -49,9 +53,13 @@
 
 #timerDone {
   background-color: darkgray;
-    border-color: darkgray;
+  border-color: darkgray;
+  outline: none;
 }
 
-#plusimg {
+#unprodDone {
+  background-color: darkgray;
+  border-color: darkgray;
+  margin-bottom: 15px;
   outline: none;
 }

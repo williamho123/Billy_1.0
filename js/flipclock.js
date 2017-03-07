@@ -43,9 +43,11 @@ if (document.getElementById('timerDone')) {
     var hour = parseFloat(document.getElementById('hourInput').value);
     if (!(isNaN(hour) || isNaN(min))) {
       localStorage.setItem('defaultTime', (hour*60+min)*60);
-      /* do the alert here
-      alert("Default time updated! Please reset timer!");
-      */
+      $('#notificationText').html("Please press timer RESET for changes to take effect.")
+      $('#notificationModal').modal('show');
+    } else {
+      $('#notificationText').html("Invalid input. Please try again.")
+      $('#notificationModal').modal('show');
     }
   }
 }

@@ -10,20 +10,14 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Add Category</button>
+        <button type="button" class="btn darkgray" style="color: white;" data-dismiss="modal">Add Category</button>
       </div>
     </div>
   </div>
 </div>
 
 <script type="text/javascript">
-  $('#modal1').on('hidden.bs.modal', function (e) {
-    $(this)
-      .find("input,textarea,select")
-         .val('')
-         .end()
-      .find("input[type=checkbox], input[type=radio]")
-         .prop("checked", "")
-         .end();
-  })
+  $('#categoryModal').on('hidden.bs.modal', function (e) {
+    $(this).find("input").val('').end()
+  });
 </script>
