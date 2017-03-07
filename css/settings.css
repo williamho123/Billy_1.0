@@ -7,3 +7,46 @@
 .panel-heading a.collapsed:after {
     content:"\e080";
 }
+
+.offset-small {
+  margin-top: 3rem;
+}
+
+.box {
+  height: 120px;
+  width: 170px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+.box-outline {
+  outline: solid;
+  outline-width: 1px;
+  font-size: 20px;
+}
+
+.sm-bg {
+  background-color: rgba(58, 154, 179, 1);
+}
+
+.school-bg {
+  background-color: rgba(75, 192, 192, 1);
+}
+
+.ent-bg {
+  background-color: rgba(178, 172, 218, 1);
+}
+
+.news-bg {
+  background-color: rgba(115, 128, 189, 1);
+}
+
+.shop-bg {
+  background-color: #475a77;
+}
+
+#timerDone {
+  background-color: rgb(62,71,70);
+}
