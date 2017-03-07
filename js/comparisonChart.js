@@ -121,7 +121,7 @@ barChart.data.datasets[1].data[4] = 15;
 barChart.data.labels[0] = "Amazon";
 barChart.data.labels[1] = "EBay";
 barChart.data.labels[2] = "CraigsList";
-barChart.data.labels[3] = "Alibaba";
+barChart.data.labels[3] = "Outnet";
 barChart.data.labels[4] = "Taobao";
 barChart.update();
 };
@@ -148,7 +148,8 @@ var barChart = new Chart(ctx3, {
 	 yAxes: [{
             ticks: {
                 fontSize: 20,
-                fontFamily: "Raleway"
+                fontFamily: "Raleway",
+                suggestedMin: 0
             },
 	    scaleLabel: {
        		 display: true,

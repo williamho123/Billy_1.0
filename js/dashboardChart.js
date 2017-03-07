@@ -48,7 +48,7 @@ Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
 
 					var labelPos = this.tooltipPosition();
 					var segmentLabel = vm.circumference / opts.circumference * 100;
-
+					var labelText = vm.label;
 					ctx.beginPath();
 
 					ctx.arc(vm.x, vm.y, vm.outerRadius, sA, eA);
@@ -74,6 +74,7 @@ Chart.controllers.doughnutLabels = Chart.controllers.doughnut.extend({
 						ctx.textBaseline = "top";
 						ctx.textAlign = "center";
             // Round percentage in a way that it always adds up to 100%
+						ctx.fillText(labelText, labelPos.x, labelPos.y - 20);
 						ctx.fillText(segmentLabel.toFixed(0) + "%", labelPos.x, labelPos.y);
 					}
       }
@@ -127,6 +128,7 @@ var config = {
   options: {
     responsive: true,
     legend: {
+			display:false,
       position: 'right',
      labels: {fontSize: 13, fontFamily: "raleway"},
              onClick: function(event, legendItem) {}
@@ -151,8 +153,8 @@ function adjustChartSize(){
      var w = $(window).width();
 var h = $(window).height();
         $("#myChart").css({
-                width:Math.min(w,h)*0.85,
-                height: Math.min(w,h)*0.85
+                width:Math.min(w,h)*0.80,
+                height: Math.min(w,h)*0.80
 }		);
 }
 adjustChartSize();  //onload
