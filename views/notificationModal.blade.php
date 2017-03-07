@@ -6,7 +6,7 @@
         <h4 class="modal-title">Default Timer Status</h4>
       </div>
       <div class="modal-body">
-        <h4 id="notificationText"></h4>
+        <h5 id="notificationText"></h4>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn darkgray" style="color: white;" data-dismiss="modal">Close</button>

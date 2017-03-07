@@ -45,6 +45,8 @@ if (document.getElementById('timerDone')) {
       localStorage.setItem('defaultTime', (hour*60+min)*60);
       $('#notificationText').html("Please press timer RESET for changes to take effect.")
       $('#notificationModal').modal('show');
+      $('#hourInput').val('').end();
+      $('#minInput').val('').end();
     } else {
       $('#notificationText').html("Invalid input. Please try again.")
       $('#notificationModal').modal('show');
