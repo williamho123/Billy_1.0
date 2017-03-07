@@ -82,7 +82,7 @@ function initializeClock() {
   var timeinterval = setInterval(updateClock, 1000);
 
 }
-
+/*
 jiashi.onclick =function() {
   if (Math.floor((endtime/ ( 60 * 60)) % 24)>22){
     endtime = endtime - 23*60*60;
@@ -96,7 +96,8 @@ jiashi.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 };
-
+*/
+/*
 jiafen.onclick =function() {
   if (Math.floor((endtime/ 60) % 60)>58){
     endtime = endtime - 59*60;
@@ -110,7 +111,8 @@ jiafen.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 };
-
+*/
+/*
 jiamiao.onclick =function() {
   if (Math.floor(endtime % 60)>58) {
     endtime = endtime - 59;
@@ -125,7 +127,8 @@ jiamiao.onclick =function() {
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
 };
-
+*/
+/*
 jianshi.onclick =function() {
   if (Math.floor((endtime/ ( 60 * 60)) % 24)<1){
     endtime = endtime + 23*60*60;
@@ -139,7 +142,8 @@ jianshi.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 };
-
+*/
+/*
 jianfen.onclick =function() {
   if (Math.floor((endtime/ 60) % 60)<1){
     endtime = endtime + 59*60;
@@ -153,7 +157,8 @@ jianfen.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 };
-
+*/
+/*
 jianmiao.onclick =function() {
   if (Math.floor((endtime ) % 60)<1){
     endtime = endtime + 59;
@@ -166,7 +171,7 @@ jianmiao.onclick =function() {
   minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
   secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 };
-
+*/
 
 
 stopbutton.onclick = function() {
@@ -193,3 +198,112 @@ startbutton.onclick = function() {
 localStorage.setItem("stp", stopp);
 };
 initializeClock();
+
+function holdit(btn, action, start, speedup) {
+    var t;
+
+    var repeat = function () {
+        action();
+        t = setTimeout(repeat, start);
+        start = (start / speedup > 20) ? start/speedup : 20;
+    }
+
+    btn.onmousedown = function() {
+        repeat();
+    }
+
+    btn.onmouseup = function () {
+        clearTimeout(t);
+        start = 1000;
+    }
+};
+
+holdit(jianmiao, function() {
+  if (Math.floor((endtime ) % 60)<1){
+    endtime = endtime + 59;
+  }
+  else {
+    endtime = endtime - 1;
+  }
+  var t = getTimeRemaining(endtime);
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+}, 1000, 1.4);
+
+
+
+
+holdit(jianfen, function() {
+  if (Math.floor((endtime/ 60) % 60)<1){
+    endtime = endtime + 59*60;
+  }
+  else {
+    endtime = endtime - 60;
+  }
+  var t = getTimeRemaining(endtime);
+
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+}, 1000, 1.4);
+
+
+holdit(jianshi, function() {
+  if (Math.floor((endtime/ ( 60 * 60)) % 24)<1){
+    endtime = endtime + 23*60*60;
+  }
+  else {
+    endtime = endtime - 60*60;
+  }
+  var t = getTimeRemaining(endtime);
+
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+}, 1000, 1.4);
+
+
+holdit(jiamiao,function() {
+  if (Math.floor(endtime % 60)>58) {
+    endtime = endtime - 59;
+  }
+  else {
+    endtime = endtime +1;
+  }
+  var t = getTimeRemaining(endtime);
+
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+}, 1000, 1.4);
+
+
+holdit(jiafen, function() {
+  if (Math.floor((endtime/ 60) % 60)>58){
+    endtime = endtime - 59*60;
+  }
+  else {
+    endtime = endtime + 60;
+  }
+  var t = getTimeRemaining(endtime);
+
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+}, 1000, 1.4);
+
+holdit(jiashi, function() {
+  if (Math.floor((endtime/ ( 60 * 60)) % 24)>22){
+    endtime = endtime - 23*60*60;
+  }
+  else {
+    endtime = endtime + 60*60;
+  }
+  var t = getTimeRemaining(endtime);
+
+  hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+  minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+  secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+}, 1000, 1.4);
