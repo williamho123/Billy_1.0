@@ -51,3 +51,7 @@
   background-color: darkgray;
     border-color: darkgray;
 }
+
+#plusimg {
+  outline: none;
+}
