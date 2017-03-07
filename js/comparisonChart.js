@@ -148,7 +148,8 @@ var barChart = new Chart(ctx3, {
 	 yAxes: [{
             ticks: {
                 fontSize: 20,
-                fontFamily: "Raleway"
+                fontFamily: "Raleway",
+                suggestedMin: 0
             },
 	    scaleLabel: {
        		 display: true,
