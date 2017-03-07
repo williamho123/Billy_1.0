@@ -70,6 +70,7 @@
                 <label class="sr-only" for="inlineFormInput">Minutes</label>
                 <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="minInput" placeholder="Minutes">
                 <button id = "timerDone" type = "button" class="btn btn-primary">Update</button>
+                <script src="../js/flipclock.js"></script>
               </form>
             </div>
         </div>

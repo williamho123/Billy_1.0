@@ -17,7 +17,12 @@ if (localStorage.getItem("end")) {
 }
 else {
   var stopp = 1;
-  var endtime = 60*60;
+  var endtime;
+  if(localStorage.getItem('defaultTime')) {
+    endtime = localStorage.getItem('defaultTime');
+  }else {
+    endtime = 60*60;
+  }
 }
 var stopbutton = document.getElementById("stopb");
 var startbutton = document.getElementById("startb");
@@ -32,7 +37,17 @@ var hoursSpan = clock.querySelector('.hours');
 var minutesSpan = clock.querySelector('.minutes');
 var secondsSpan = clock.querySelector('.seconds');
 
-
+if (document.getElementById('timerDone')) {
+  document.getElementById('timerDone').onclick = function(){
+    console.log("timedone clicked");
+    var min = parseFloat(document.getElementById('minInput').value);
+    if (isNaN(min)) min = 1;
+    var hour = parseFloat(document.getElementById('hourInput').value);
+    if (isNaN(hour)) hour = 0;
+    console.log(min + " "+ hour );
+    localStorage.setItem('defaultTime', (hour*60+min)*60);
+  }
+}
 
 function getTimeRemaining(endtime) {
   var t = endtime;
